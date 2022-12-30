@@ -25,3 +25,11 @@ You may also use the `generate_jar.sh` script to generate a fresh jar of the pro
 
 ## Opening files
 Once you have the application running you can open a file by going to File -> Open.
+
+## Noteable Issue withe Graphics in JavaFX
+
+- Application lags when drawing size on the canvas is large. This seems to be a common issue with the library that this project uses:
+  - https://bugs.openjdk.org/browse/JDK-8090755
+  - https://community.oracle.com/tech/developers/discussion/3755802/rendering-a-canvas-on-a-background-thread-is-very-slow-when-updateing-the-scene-graph
+  The source suggests that this is not an issue on Windows and MacoS.
+- An overall better solution would be to do this in OpenGL using C/C++.
