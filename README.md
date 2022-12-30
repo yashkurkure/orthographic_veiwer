@@ -32,4 +32,4 @@ Once you have the application running you can open a file by going to File -> Op
   - https://bugs.openjdk.org/browse/JDK-8090755
   - https://community.oracle.com/tech/developers/discussion/3755802/rendering-a-canvas-on-a-background-thread-is-very-slow-when-updateing-the-scene-graph
   The source suggests that this is not an issue on Windows and MacoS.
-- An overall better solution would be to do this in OpenGL using C/C++.
+- An overall better solution would be use java SWING instead of JavaFX libraries, as those are often used in game development.
